@@ -1,4 +1,4 @@
-function[label, sampling_time, eigen_time, contruct_time, k_means] =  kasp(data,a, k, sigma, numRep, s, kmMaxIter)
+function[label, sampling_time, eigen_time, contruct_time, k_means] =  kasp(data,a, k, sigma,  s)
 if ~exist('a', 'var')
     a=600; 
 end

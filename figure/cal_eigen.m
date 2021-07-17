@@ -45,9 +45,7 @@ eigvalue_MinusHalf = eigvalue_Half.^-1;
 
 U(:,1) = [];
 eigvalue_MinusHalf(1) = [];
-% U1 = U;
 U1 = U.*repmat(eigvalue_MinusHalf',size(U,1),1);
-%                         U1 = U1 ./repmat(sqrt(sum(U1.^2,2)),1,K);
-C = Z * U1;%( U.*repmat(eigvalue_MinusHalf',size(U,1),1));
+C = Z * U1;
 C = C ./repmat(sqrt(sum(C.^2,2)),1,K);
 U1 = U1 ./repmat(sqrt(sum(U1.^2,2)),1,K);

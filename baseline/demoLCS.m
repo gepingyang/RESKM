@@ -4,7 +4,9 @@ fea = double(fea);
 fea = full(fea);
 opts.r = 2;% the number of neareast anchors
 opts.p = 600 ;% the number of anchors 
-opts.mode = 'kmeans';%denotes the mode of anchor selction,'kmeans' denotes perfroming k-means on the whole datasets.          
+opts.mode = 'kmeans';%denotes the mode of anchor selction,'kmeans' denotes perfroming k-means on the whole dataset,and 'bkmeans' denotes..
+                       %proposing anchor slection method of our paper,and  need to set the parameters of opts.s.                 
+opts.s = 0;% the number of sampled object to perform a-means anchor selection,corrleating to opts.mode = 'bkmeans'.         
 K = 10;% the number of clusters.
 seed.start = 1;
 seed.end = 10;
@@ -26,9 +28,6 @@ time_std = 0;
 for i = seed.start : seed.end    
     rand('seed',i);    
     fprintf('Seed No: %d\n',i);
-
-%step 1: Construct the hypergraph  H matrix, using linear neighbour method
- 
 
     tic;
 

@@ -1,5 +1,5 @@
 source of the paper 
-' RESKM: A general framework to accelerate spectral clustering'
+' RESKM: A general framework to accelerate large-scale spectral clustering'
 # Environment
 MATLAB R2018b
 #Run

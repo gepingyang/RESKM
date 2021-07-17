@@ -5,7 +5,7 @@ fea = full(fea);
 K = 10;% the number of clusters
 sigma = 8;%bandwidth parameter
 a = 600;% the number of anchors   
-s = 0 % the number of sampled object to perform a-means anchor selection, while s = 0, it wolud perform a-means on the whole dataset 
+s = 0; % the number of sampled object to perform a-means anchor selection, while s = 0, it wolud perform a-means on the whole dataset 
         %to select anchors
 
 seed.start = 1;

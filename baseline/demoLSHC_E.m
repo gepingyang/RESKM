@@ -8,7 +8,7 @@ opts.a = 600; % the number of anchors
 opts.mode = 'kmeans';%denotes the mode of anchor selction,'kmeans' denotes perfroming k-means on the whole dataset,and 'bkmeans' denotes..
                        %proposing anchor slection method of our paper,and  need to set the parameters of opts.s.                 
 opts.kmMaxIter = 3;% the Iterations of a-means  anchor selection 
-opts.s = 0;% the number of sampled object to perform a-means anchor selection,corrleate to opts.mode = 'bkmeans'.
+opts.s = 0;% the number of sampled object to perform a-means anchor selection,corrleating to opts.mode = 'bkmeans'.
 K = 10;% the number of clusters.
 % configuration
 seed.start = 1;
